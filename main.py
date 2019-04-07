@@ -25,10 +25,8 @@ if __name__ == '__main__':
     # parsing
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('-c', '--C', dest='c', metavar='', default='TSLA', type=str, help='company name')
     parser.add_argument('-s', '--S', dest='s', metavar='', type=str, default='yahoo', help='stock market data source')
     parser.add_argument('-ds', '--DS', dest='ds', metavar='', default='2016-01-01', help='date started (YYYY-MM-DD)')
-    parser.add_argument('-df', '--DF', dest='df', metavar='', default='2017-10-01', help='date finished (YYYY-MM-DD')
     p = parser.parse_args()
 
     # the time span
